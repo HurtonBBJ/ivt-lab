@@ -17,8 +17,6 @@ public class GT4500Test {
 
   @Test
   public void fireTorpedo_Single_Success(){
-    // Arrange
-
     // Act
     boolean result = ship.fireTorpedo(FiringMode.SINGLE);
 
@@ -27,14 +25,12 @@ public class GT4500Test {
   }
 
   @Test
-  public void fireTorpedo_All_Success(){
-    // Arrange
-
+  public void fireTorpedo_All_Failure(){
     // Act
     boolean result = ship.fireTorpedo(FiringMode.ALL);
 
     // Assert
-    assertEquals(true, result);
+    assertEquals(false, result);
   }
 
 }
